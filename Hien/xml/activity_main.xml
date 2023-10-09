@@ -7,12 +7,141 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvAcc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="100dp"
+        android:text="Accelerator"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_aX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="68dp"
+        android:text="aX"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAcc"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_aY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="68dp"
+        android:text="aY"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_aX"
+        app:layout_constraintTop_toBottomOf="@+id/tvAcc" />
+
+    <TextView
+        android:id="@+id/tv_aZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="aZ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toEndOf="@+id/tv_aY"
+        app:layout_constraintTop_toBottomOf="@+id/tvAcc"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_Gyr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="Gyroscope"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_aX"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_gX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:text="gX"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Gyr"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_gY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="64dp"
+        android:text="gY"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_gX"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Gyr" />
+
+    <TextView
+        android:id="@+id/tv_gZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="gZ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toEndOf="@+id/tv_gY"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Gyr"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_mag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Magnetic Field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gX"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_mX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="68dp"
+        android:text="mX"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mag"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_mY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="68dp"
+        android:text="mY"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_mX"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mag" />
+
+    <TextView
+        android:id="@+id/tv_mZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="mZ"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toEndOf="@+id/tv_mY"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mag" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
